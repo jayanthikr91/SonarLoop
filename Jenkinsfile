@@ -9,7 +9,7 @@ echo "${len}"
 def paramString = "";
     for(int i=0;i<len;i++)
     {
-        paramString = paramString + " "+ prefix+"${lines[i].trim()}";
+        paramString = paramString + " "+ "-D"+"${lines[i].trim()}";
     }
 echo "${paramString}"
 }
